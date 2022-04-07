@@ -1,10 +1,6 @@
-[gd_resource type="SpatialMaterial" load_steps=5 format=2]
-[ext_resource path="Ceiling_albedo.png" type="Texture" id=1]
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Materials/Ceiling/Ceiling_albedo.png" type="Texture" id=1]
+
 [resource]
-albedo_color = Color(1, 1, 1, 1)
 albedo_texture = ExtResource( 1 )
-metallic = 0
-roughness = 1
-
-
-

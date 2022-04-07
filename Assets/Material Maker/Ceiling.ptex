@@ -15,7 +15,7 @@
 	],
 	"label": "Graph",
 	"longdesc": "",
-	"name": "@@309",
+	"name": "309",
 	"node_position": {
 		"x": 0,
 		"y": 0
@@ -60,13 +60,13 @@
 			},
 			"parameters": {
 				"bevel": 0.12,
-				"columns": 3,
+				"columns": 12,
 				"corner": 0.26,
 				"mortar": -0.03,
 				"pattern": 0,
 				"round": 0.14,
 				"row_offset": 1,
-				"rows": 3
+				"rows": 12
 			},
 			"seed": 0,
 			"seed_locked": false,
