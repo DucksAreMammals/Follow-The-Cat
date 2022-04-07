@@ -1,0 +1,374 @@
+{
+	"connections": [
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "truchet",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 1
+		},
+		{
+			"from": "weave2",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 0
+		},
+		{
+			"from": "math",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "noise_anisotropic",
+			"from_port": 0,
+			"to": "math_2",
+			"to_port": 1
+		},
+		{
+			"from": "math_2",
+			"from_port": 0,
+			"to": "colorize_2",
+			"to_port": 0
+		},
+		{
+			"from": "scratches",
+			"from_port": 0,
+			"to": "math_3",
+			"to_port": 0
+		},
+		{
+			"from": "math_3",
+			"from_port": 0,
+			"to": "math_2",
+			"to_port": 0
+		},
+		{
+			"from": "fbm2",
+			"from_port": 0,
+			"to": "colorize_3",
+			"to_port": 0
+		},
+		{
+			"from": "colorize_3",
+			"from_port": 0,
+			"to": "math_4",
+			"to_port": 1
+		},
+		{
+			"from": "colorize_2",
+			"from_port": 0,
+			"to": "math_4",
+			"to_port": 0
+		},
+		{
+			"from": "math_4",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 4
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "309",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Godot": "/home/bjornlucas/Documents/Godot/Follow-The-Cat/Assets/Material Maker/Walls Texture"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 448,
+				"y": 6
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": true,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material"
+		},
+		{
+			"name": "weave2",
+			"node_position": {
+				"x": -873,
+				"y": -168
+			},
+			"parameters": {
+				"columns": 4,
+				"rows": 4,
+				"stitch": 2,
+				"width_x": 0.85,
+				"width_y": 0.85
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "weave2"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": -50,
+				"y": -33
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.526917,
+							"g": 0.688735,
+							"pos": 0,
+							"r": 0.695312
+						},
+						{
+							"a": 1,
+							"b": 0.405121,
+							"g": 0.585938,
+							"pos": 1,
+							"r": 0.550622
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		},
+		{
+			"name": "truchet",
+			"node_position": {
+				"x": -862,
+				"y": 58
+			},
+			"parameters": {
+				"shape": 0,
+				"size": 8
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "truchet"
+		},
+		{
+			"name": "math",
+			"node_position": {
+				"x": -614,
+				"y": -79
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 2
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		},
+		{
+			"name": "scratches",
+			"node_position": {
+				"x": -909,
+				"y": 196
+			},
+			"parameters": {
+				"angle": 40,
+				"layers": 4,
+				"length": 0.44,
+				"randomness": 0.8,
+				"waviness": 0.79,
+				"width": 0.22
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "scratches"
+		},
+		{
+			"name": "noise_anisotropic",
+			"node_position": {
+				"x": -778,
+				"y": 426
+			},
+			"parameters": {
+				"interpolation": 1,
+				"scale_x": 4,
+				"scale_y": 256,
+				"smoothness": 1
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "noise_anisotropic"
+		},
+		{
+			"name": "math_2",
+			"node_position": {
+				"x": -374,
+				"y": 302
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		},
+		{
+			"name": "colorize_2",
+			"node_position": {
+				"x": -116,
+				"y": 279
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0,
+							"g": 0,
+							"pos": 0,
+							"r": 0
+						},
+						{
+							"a": 1,
+							"b": 0.046875,
+							"g": 0.046875,
+							"pos": 0.863636,
+							"r": 0.046875
+						},
+						{
+							"a": 1,
+							"b": 0.128906,
+							"g": 0.128906,
+							"pos": 1,
+							"r": 0.128906
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		},
+		{
+			"name": "math_3",
+			"node_position": {
+				"x": -635,
+				"y": 241
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 2.31,
+				"op": 1
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		},
+		{
+			"name": "fbm2",
+			"node_position": {
+				"x": -388,
+				"y": 534
+			},
+			"parameters": {
+				"folds": 0,
+				"iterations": 5,
+				"noise": 0,
+				"offset": 0,
+				"persistence": 0.5,
+				"scale_x": 2,
+				"scale_y": 2
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "fbm2"
+		},
+		{
+			"name": "colorize_3",
+			"node_position": {
+				"x": -75,
+				"y": 517
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0,
+							"g": 0,
+							"pos": 0.318182,
+							"r": 0
+						},
+						{
+							"a": 1,
+							"b": 0.152344,
+							"g": 0.152344,
+							"pos": 0.781818,
+							"r": 0.152344
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		},
+		{
+			"name": "math_4",
+			"node_position": {
+				"x": 150,
+				"y": 361
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}
