@@ -2,7 +2,7 @@ extends KinematicBody
 
 var mouse_sensitivity := 0.45
 
-var acceleration_speed := 3.0
+var acceleration_speed := 1.5
 
 var friction := 0.5
 var gravity := 8.0

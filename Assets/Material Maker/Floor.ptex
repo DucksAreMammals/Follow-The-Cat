@@ -1,0 +1,290 @@
+{
+	"connections": [
+		{
+			"from": "perlin",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 1
+		},
+		{
+			"from": "beehive",
+			"from_port": 0,
+			"to": "math",
+			"to_port": 0
+		},
+		{
+			"from": "math",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "perlin_2",
+			"from_port": 0,
+			"to": "colorize_2",
+			"to_port": 0
+		},
+		{
+			"from": "colorize_2",
+			"from_port": 0,
+			"to": "math_v3",
+			"to_port": 1
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "math_v3",
+			"to_port": 0
+		},
+		{
+			"from": "math_v3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		},
+		{
+			"from": "math",
+			"from_port": 0,
+			"to": "colorize_3",
+			"to_port": 0
+		},
+		{
+			"from": "colorize_3",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 2
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "@@309",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Godot": "/home/bjornlucas/Documents/Godot/Follow-The-Cat/Assets/Material Maker/Floor"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 794,
+				"y": 118
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": true,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material"
+		},
+		{
+			"name": "beehive",
+			"node_position": {
+				"x": -727.400085,
+				"y": 0.080034
+			},
+			"parameters": {
+				"sx": 14,
+				"sy": 9
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "beehive"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": 7,
+				"y": 46
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.257812,
+							"g": 0.176192,
+							"pos": 0,
+							"r": 0.166168
+						},
+						{
+							"a": 1,
+							"b": 0.296875,
+							"g": 0.166494,
+							"pos": 0.094684,
+							"r": 0.154236
+						},
+						{
+							"a": 1,
+							"b": 0.332031,
+							"g": 0.245852,
+							"pos": 1,
+							"r": 0.156937
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		},
+		{
+			"name": "perlin",
+			"node_position": {
+				"x": -635,
+				"y": 223
+			},
+			"parameters": {
+				"iterations": 10,
+				"persistence": 0.45,
+				"scale_x": 14,
+				"scale_y": 14
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "perlin"
+		},
+		{
+			"name": "math",
+			"node_position": {
+				"x": -334,
+				"y": 83
+			},
+			"parameters": {
+				"clamp": false,
+				"default_in1": 0,
+				"default_in2": 0,
+				"op": 3
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math"
+		},
+		{
+			"name": "perlin_2",
+			"node_position": {
+				"x": -336,
+				"y": 284
+			},
+			"parameters": {
+				"iterations": 3,
+				"persistence": 0.5,
+				"scale_x": 4,
+				"scale_y": 4
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "perlin"
+		},
+		{
+			"name": "colorize_2",
+			"node_position": {
+				"x": -39,
+				"y": 276
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0,
+							"g": 0,
+							"pos": 0,
+							"r": 0
+						},
+						{
+							"a": 1,
+							"b": 0.058594,
+							"g": 0.058594,
+							"pos": 1,
+							"r": 0.058594
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		},
+		{
+			"name": "math_v3",
+			"node_position": {
+				"x": 287,
+				"y": 101
+			},
+			"parameters": {
+				"clamp": false,
+				"d_in1_x": 0,
+				"d_in1_y": 0,
+				"d_in1_z": 0,
+				"d_in2_x": 0,
+				"d_in2_y": 0,
+				"d_in2_z": 0,
+				"op": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "math_v3"
+		},
+		{
+			"name": "colorize_3",
+			"node_position": {
+				"x": 338,
+				"y": 278
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.828125,
+							"g": 0.828125,
+							"pos": 0,
+							"r": 0.828125
+						},
+						{
+							"a": 1,
+							"b": 1,
+							"g": 1,
+							"pos": 1,
+							"r": 1
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}

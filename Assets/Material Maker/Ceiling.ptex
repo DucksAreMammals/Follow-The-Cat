@@ -1,0 +1,129 @@
+{
+	"connections": [
+		{
+			"from": "bricks2",
+			"from_port": 0,
+			"to": "colorize",
+			"to_port": 0
+		},
+		{
+			"from": "colorize",
+			"from_port": 0,
+			"to": "Material",
+			"to_port": 0
+		}
+	],
+	"label": "Graph",
+	"longdesc": "",
+	"name": "@@309",
+	"node_position": {
+		"x": 0,
+		"y": 0
+	},
+	"nodes": [
+		{
+			"export_paths": {
+				"Godot": "/home/bjornlucas/Documents/Godot/Follow-The-Cat/Source/Materials/Ceiling/Ceiling"
+			},
+			"name": "Material",
+			"node_position": {
+				"x": 53,
+				"y": 1
+			},
+			"parameters": {
+				"albedo_color": {
+					"a": 1,
+					"b": 1,
+					"g": 1,
+					"r": 1,
+					"type": "Color"
+				},
+				"ao": 1,
+				"depth_scale": 0.5,
+				"emission_energy": 1,
+				"flags_transparent": true,
+				"metallic": 0,
+				"normal": 1,
+				"roughness": 1,
+				"size": 11,
+				"sss": 0
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "material"
+		},
+		{
+			"name": "bricks2",
+			"node_position": {
+				"x": -577,
+				"y": 69
+			},
+			"parameters": {
+				"bevel": 0.12,
+				"columns": 3,
+				"corner": 0.26,
+				"mortar": -0.03,
+				"pattern": 0,
+				"round": 0.14,
+				"row_offset": 1,
+				"rows": 3
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "bricks2"
+		},
+		{
+			"name": "colorize",
+			"node_position": {
+				"x": -259,
+				"y": 59
+			},
+			"parameters": {
+				"gradient": {
+					"interpolation": 1,
+					"points": [
+						{
+							"a": 1,
+							"b": 0.298981,
+							"g": 0.298981,
+							"pos": 0,
+							"r": 0.378906
+						},
+						{
+							"a": 1,
+							"b": 0.534592,
+							"g": 0.534592,
+							"pos": 0.218182,
+							"r": 0.558594
+						},
+						{
+							"a": 1,
+							"b": 0.774231,
+							"g": 0.774231,
+							"pos": 1,
+							"r": 0.839844
+						},
+						{
+							"a": 1,
+							"b": 0.824219,
+							"g": 0.824219,
+							"pos": 1.000001,
+							"r": 0.824219
+						}
+					],
+					"type": "Gradient"
+				}
+			},
+			"seed": 0,
+			"seed_locked": false,
+			"type": "colorize"
+		}
+	],
+	"parameters": {
+
+	},
+	"seed": 0,
+	"seed_locked": false,
+	"shortdesc": "",
+	"type": "graph"
+}
