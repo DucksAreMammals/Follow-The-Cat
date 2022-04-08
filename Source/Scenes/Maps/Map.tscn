@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://3D Models/Source Files/Map.fbx" type="PackedScene" id=1]
 [ext_resource path="res://Materials/Ceiling/Ceiling.tres" type="Material" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://3D Models/Scenes/Pictures/Picture1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://3D Models/Scenes/Pictures/Picture2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://3D Models/Scenes/Pictures/Picture3.tscn" type="PackedScene" id=7]
+[ext_resource path="res://3D Models/Scenes/Clouds.tscn" type="PackedScene" id=8]
 
 [sub_resource type="ConvexPolygonShape" id=1]
 points = PoolVector3Array( 0, 0, 0, 0.0999902, 0, 0, 0, 0.15, 0, 0.0999902, 0.15, 0 )
@@ -56,3 +57,10 @@ transform = Transform( -2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, -
 
 [node name="Picture3" parent="." index="4" instance=ExtResource( 7 )]
 transform = Transform( -0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -3.11281, 1.01258, 6.63711 )
+
+[node name="Clouds" parent="." index="5" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.77357, 359.071, 4.05278 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="." index="6"]
+transform = Transform( 0.88219, 0.410502, 0.230711, 0.153016, -0.713259, 0.683994, 0.445338, -0.568111, -0.692044, 0, 361.408, 0 )
+light_energy = 0.0

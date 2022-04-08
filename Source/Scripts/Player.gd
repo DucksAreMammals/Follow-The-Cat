@@ -9,11 +9,16 @@ var gravity := 8.0
 
 var velocity := Vector3.ZERO
 
+export var in_cutscene = false
+
 func _process(delta):
 	_apply_gravity()
 	_apply_movement()
 	
 	velocity = move_and_slide(velocity, Vector3.UP, true)
+	
+	if translation.y < 350 and translation.y > 200 and not in_cutscene:
+		translation = Vector3(-8.774, 361.5, 4.053)
 
 func _input(event):
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
