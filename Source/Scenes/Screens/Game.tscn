@@ -123,7 +123,7 @@ script = ExtResource( 1 )
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 0.8, 1.2 )
 
 [node name="Cat" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.74852, 0.0434754, 4.56862 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.42525, 0.0434759, 1.3113 )
 animation_player = NodePath("AnimationPlayer")
 player = NodePath("../Player")
 
