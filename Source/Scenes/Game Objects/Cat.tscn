@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Materials/Cat/Cat.material" type="Material" id=1]
+[ext_resource path="res://3D Models/Source Files/Cat.fbx" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/Cat.gd" type="Script" id=3]
+
+[node name="Cat" instance=ExtResource( 2 )]
+script = ExtResource( 3 )
+
+[node name="RootNode" parent="." index="0"]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+
+[node name="Cat" parent="RootNode" index="0"]
+material/0 = ExtResource( 1 )

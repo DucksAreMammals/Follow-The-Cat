@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Game Objects/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Maps/Map.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Game Objects/Cat.tscn" type="PackedScene" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Move1"
+length = 3.0
+step = 0.05
+tracks/0/type = "transform"
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -7.42525, 0.0434759, 1.3113, 0, 0, 0, 1, 1, 1, 1, 0.6, 1, -7.42525, 0.0434759, 1.3113, 0, 0.95837, 0, -0.285529, 1, 1, 1, 1.3, 1, -8.92804, 0.0434759, 2.3447, 0, 0.915578, 0, -0.40214, 1, 1, 1, 1.45, 1, -8.91807, 0.0434759, 2.72814, 0, -0.771398, 0, 0.636353, 1, 1, 1, 1.95, 1, -8.8204, 0.0434759, 4.27657, 0, -0.715918, 0, 0.698184, 1, 1, 1, 2.35, 1, -8.72272, 0.0434759, 5.825, 0, -0.715919, 0, 0.698183, 1, 1, 1, 2.95, 1, -8.72272, 0.0434759, 5.825, 0, 0.681914, 0, 0.731432, 1, 1, 1 )
+
+[node name="Game" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.323, 0.8, 1.662 )
+
+[node name="Cat" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.42525, 0.0434759, 1.3113 )
+animation_player = NodePath("AnimationPlayer")
+player = NodePath("../Player")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cat"]
+anims/Move1 = SubResource( 1 )
+
+[node name="Map" parent="." instance=ExtResource( 3 )]

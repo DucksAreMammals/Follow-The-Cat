@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Credits.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+bbcode_enabled = true
+bbcode_text = "Thanks quaternius on OpenGameArt fort the cat model!
+[url]https://opengameart.org/content/animated-animales-low-poly[url]"
+text = "Thanks quaternius on OpenGameArt fort the cat model!
+https://opengameart.org/content/animated-animales-low-poly"
+script = ExtResource( 1 )
+
+[connection signal="meta_clicked" from="RichTextLabel" to="RichTextLabel" method="_on_RichTextLabel_meta_clicked"]
