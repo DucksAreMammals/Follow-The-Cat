@@ -54,7 +54,7 @@ tracks/0/keys = PoolRealArray( 0, 1, -1.29741, 0.0434754, 4.56862, 0, -0.733737,
 
 [sub_resource type="Animation" id=5]
 resource_name = "Move5"
-length = 40.211
+length = 37.814
 tracks/0/type = "value"
 tracks/0/path = NodePath(".:scale")
 tracks/0/interp = 1
@@ -123,7 +123,7 @@ script = ExtResource( 1 )
 transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 0.8, 1.2 )
 
 [node name="Cat" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.42525, 0.0434759, 1.3113 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.74852, 0.0434754, 4.56862 )
 animation_player = NodePath("AnimationPlayer")
 player = NodePath("../Player")
 
