@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Indoor Environment.tres" type="Environment" id=2]
+[ext_resource path="res://Environments/Indoor Environment.tres" type="Environment" id=2]
 
 [sub_resource type="CapsuleMesh" id=1]
 radius = 0.4
