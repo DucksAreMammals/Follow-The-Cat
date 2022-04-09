@@ -7,10 +7,11 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 640, 360 )
-scale = Vector2( 0.666667, 0.666667 )
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
 texture = ExtResource( 2 )
+expand = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 visible = false
@@ -20,7 +21,14 @@ margin_top = 39.0
 margin_right = 1267.0
 margin_bottom = 687.0
 bbcode_enabled = true
-bbcode_text = "Cat Model:
+bbcode_text = "Credits:
+
+Programmer, Designer, Cool Person:
+
+DucskAreMammals
+
+
+Cat Model:
 
 [url]https://opengameart.org/content/animated-animales-low-poly[/url]
 
@@ -38,9 +46,9 @@ Cat Sounds:
 [url]https://freesound.org/people/steffcaffrey/sounds/262312/[/url]"
 text = "Credits:
 
-Programmer, Designer, Visionary, Cool person:
+Programmer, Designer, Cool Person:
 
-DucksAreMammals
+DucskAreMammals
 
 
 Cat Model:
@@ -58,9 +66,7 @@ https://freesound.org/people/skymary/sounds/412016/
 
 https://freesound.org/people/TRNGLE/sounds/362652/
 
-https://freesound.org/people/steffcaffrey/sounds/262312/
-
-Thank you for playing! You are truly Greg."
+https://freesound.org/people/steffcaffrey/sounds/262312/"
 scroll_active = false
 script = ExtResource( 1 )
 
