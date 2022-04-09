@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Scripts/Game.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Game Objects/Player.tscn" type="PackedScene" id=2]
@@ -6,11 +6,12 @@
 [ext_resource path="res://Scenes/Game Objects/Cat.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Environments/Indoor Environment.tres" type="Environment" id=5]
 [ext_resource path="res://Environments/Outdoor Environment.tres" type="Environment" id=6]
-[ext_resource path="res://Audio/Cat/Meow1.ogg" type="AudioStream" id=7]
-[ext_resource path="res://Audio/Cat/Meow2.ogg" type="AudioStream" id=8]
-[ext_resource path="res://Audio/Cat/Meow3.ogg" type="AudioStream" id=9]
-[ext_resource path="res://Audio/Cat/Meow4.ogg" type="AudioStream" id=10]
-[ext_resource path="res://Audio/Cat/Meow5.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Audio/Meow/Meow1.ogg" type="AudioStream" id=7]
+[ext_resource path="res://Audio/Meow/Meow2.ogg" type="AudioStream" id=8]
+[ext_resource path="res://Audio/Meow/Meow3.ogg" type="AudioStream" id=9]
+[ext_resource path="res://Audio/Meow/Meow4.ogg" type="AudioStream" id=10]
+[ext_resource path="res://Audio/Meow/Meow5.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Audio/Cat Take Off.ogg" type="AudioStream" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Move1"
@@ -247,10 +248,10 @@ tracks/7/loop_wrap = true
 tracks/7/imported = false
 tracks/7/enabled = true
 tracks/7/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ ExtResource( 11 ) ]
+"values": [ ExtResource( 11 ), ExtResource( 12 ) ]
 }
 tracks/8/type = "value"
 tracks/8/path = NodePath("AudioStreamPlayer3D:playing")
@@ -259,10 +260,10 @@ tracks/8/loop_wrap = true
 tracks/8/imported = false
 tracks/8/enabled = true
 tracks/8/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ true ]
+"values": [ true, true ]
 }
 
 [node name="Game" type="Spatial"]
@@ -285,7 +286,7 @@ anims/Move4 = SubResource( 4 )
 anims/Move5 = SubResource( 5 )
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Cat"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.503994, 0.53318, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.533, 0 )
 stream = ExtResource( 7 )
 
 [node name="Map" parent="." instance=ExtResource( 3 )]

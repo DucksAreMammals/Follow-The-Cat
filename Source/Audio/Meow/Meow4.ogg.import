@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Meow4.ogg-21278e74e3aa604996f8b31c22fdee7c.oggstr"
+
+[deps]
+
+source_file="res://Audio/Meow/Meow4.ogg"
+dest_files=[ "res://.import/Meow4.ogg-21278e74e3aa604996f8b31c22fdee7c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
