@@ -275,6 +275,7 @@ extents = Vector3( 2.14087, 1, 1 )
 [sub_resource type="Animation" id=7]
 resource_name = "Kurtis"
 length = 10.304
+step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath("../AudioStreamPlayer3D:playing")
 tracks/0/interp = 1
@@ -286,6 +287,20 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ true ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 8.38 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "_load_next"
+} ]
 }
 
 [sub_resource type="QuadMesh" id=8]
