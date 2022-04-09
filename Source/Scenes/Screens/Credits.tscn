@@ -11,9 +11,39 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 bbcode_enabled = true
 bbcode_text = "Thanks quaternius on OpenGameArt fort the cat model!
-[url]https://opengameart.org/content/animated-animales-low-poly[url]"
+[url]https://opengameart.org/content/animated-animales-low-poly[/url]
+
+
+Cat Sounds:
+
+[url]https://freesound.org/people/tuberatanka/sounds/110011/[/url]
+
+[url]https://freesound.org/people/timtube/sounds/61259/[/url]
+
+[url]https://freesound.org/people/skymary/sounds/412016/[/url]
+
+[url]https://freesound.org/people/TRNGLE/sounds/362652/[/url]
+
+[url]https://freesound.org/people/steffcaffrey/sounds/262312/[/url]
+
+"
 text = "Thanks quaternius on OpenGameArt fort the cat model!
-https://opengameart.org/content/animated-animales-low-poly"
+https://opengameart.org/content/animated-animales-low-poly
+
+
+Cat Sounds:
+
+https://freesound.org/people/tuberatanka/sounds/110011/
+
+https://freesound.org/people/timtube/sounds/61259/
+
+https://freesound.org/people/skymary/sounds/412016/
+
+https://freesound.org/people/TRNGLE/sounds/362652/
+
+https://freesound.org/people/steffcaffrey/sounds/262312/
+
+"
 script = ExtResource( 1 )
 
 [connection signal="meta_clicked" from="RichTextLabel" to="RichTextLabel" method="_on_RichTextLabel_meta_clicked"]
