@@ -1,16 +1,27 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Scripts/Credits.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Credits Screen.png" type="Texture" id=2]
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 640, 360 )
+scale = Vector2( 0.666667, 0.666667 )
+texture = ExtResource( 2 )
+
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+visible = false
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 19.0
+margin_top = 39.0
+margin_right = 1267.0
+margin_bottom = 687.0
 bbcode_enabled = true
-bbcode_text = "Thanks quaternius on OpenGameArt fort the cat model!
+bbcode_text = "Cat Model:
+
 [url]https://opengameart.org/content/animated-animales-low-poly[/url]
 
 
@@ -24,10 +35,16 @@ Cat Sounds:
 
 [url]https://freesound.org/people/TRNGLE/sounds/362652/[/url]
 
-[url]https://freesound.org/people/steffcaffrey/sounds/262312/[/url]
+[url]https://freesound.org/people/steffcaffrey/sounds/262312/[/url]"
+text = "Credits:
 
-"
-text = "Thanks quaternius on OpenGameArt fort the cat model!
+Programmer, Designer, Visionary, Cool person:
+
+DucksAreMammals
+
+
+Cat Model:
+
 https://opengameart.org/content/animated-animales-low-poly
 
 
@@ -43,7 +60,8 @@ https://freesound.org/people/TRNGLE/sounds/362652/
 
 https://freesound.org/people/steffcaffrey/sounds/262312/
 
-"
+Thank you for playing! You are truly Greg."
+scroll_active = false
 script = ExtResource( 1 )
 
 [connection signal="meta_clicked" from="RichTextLabel" to="RichTextLabel" method="_on_RichTextLabel_meta_clicked"]
