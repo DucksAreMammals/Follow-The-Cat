@@ -1,6 +1,6 @@
 extends KinematicBody
 
-var mouse_sensitivity := 0.45
+var mouse_sensitivity := 0.25
 
 var acceleration_speed := 1.5
 
