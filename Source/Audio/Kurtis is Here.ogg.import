@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Kurtis is Here.ogg-149e087ea22949e4c8b5aad3268dcec3.oggstr"
+
+[deps]
+
+source_file="res://Audio/Kurtis is Here.ogg"
+dest_files=[ "res://.import/Kurtis is Here.ogg-149e087ea22949e4c8b5aad3268dcec3.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
